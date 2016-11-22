@@ -1597,11 +1597,12 @@ box-shadow:
   text-decoration: none;
 }
 
-.hidden-form {
+.modal-write-us,
+.modal-add-product {
   display: none;
 }
 
-.hidden-map {
+.hidden {
   display: none;
 }
 
