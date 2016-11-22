@@ -12,7 +12,9 @@
     <header class="main-header">
       <div class="header-top">
         <div class="container clearfix">
-          <h1><a class="logo-link" href="#">Техномарт</a></h1>
+          <h1>
+            <a class="logo-link" href="#">Техномарт</a>
+          </h1>
           <div class="header-top-actions clearfix">
             <form class="search-form" action="#" method="get">
               <input id="search" type="search" name="search" placeholder="Поиск">
@@ -69,7 +71,7 @@
     <main>
       <div class="main-top">
         <div class="offers container">
-          <div class="offer">
+          <div class="offer new">
             <h3>Материалы</h3>
             <a href="#">На любой вкус</a>
           </div>
@@ -185,14 +187,14 @@
               <a class="popular-brands-btn btn" href="#">все производители</a>
             </div>
             <div class="popular-brands-list">
-              <a class="brand-item" href="#"><img src="img/brands/bosch.png" width=126 height=37 alt="bosch"></a>
-              <a class="brand-item" href="#"><img src="img/brands/makita.png" width=123 height=40 alt="Makita"></a>
-              <a class="brand-item" href="#"><img src="img/brands/dewalt.png" width=146 height=44 alt="DeWALT"></a>
-              <a class="brand-item" href="#"><img src="img/brands/interscol.png" width=200 height=88 alt="Интерскол"></a>
-              <a class="brand-item" href="#"><img src="img/brands/hitachi.png"  width=169 height=31 alt="Hitachi"></a>
-              <a class="brand-item" href="#"><img src="img/brands/lg.png"  width=121 height=73 alt="LG"></a>
-              <a class="brand-item" href="#"><img src="img/brands/aeg.png" width=151 height=96 alt="AEG"></a>
-              <a class="brand-item" href="#"><img src="img/brands/metabo.png" width=204 height=69 alt="Metabo"></a>
+              <a class="brand-item" href="#"><img src="img/brands/bosch-logo.png" width=126 height=37 alt="bosch"></a>
+              <a class="brand-item" href="#"><img src="img/brands/makita-logo.png" width=123 height=40 alt="Makita"></a>
+              <a class="brand-item" href="#"><img src="img/brands/dewalt-logo.png" width=146 height=44 alt="DeWALT"></a>
+              <a class="brand-item" href="#"><img src="img/brands/interscol-logo.png" width=200 height=88 alt="Интерскол"></a>
+              <a class="brand-item" href="#"><img src="img/brands/hitachi-logo.png"  width=169 height=31 alt="Hitachi"></a>
+              <a class="brand-item" href="#"><img src="img/brands/lg-logo.png"  width=121 height=73 alt="LG"></a>
+              <a class="brand-item" href="#"><img src="img/brands/aeg-logo.png" width=151 height=96 alt="AEG"></a>
+              <a class="brand-item" href="#"><img src="img/brands/metabo-logo.png" width=204 height=69 alt="Metabo"></a>
             </div>
           </section>
         </div>
@@ -268,7 +270,9 @@
       <div class="footer-top">
         <div class="container clearfix">
           <div class="footer-contacts">
-            <h2><a class="logo-link logo-footer" href="#">Техномарт</a></h2>
+            <h2>
+              <a class="logo-link logo-footer" href="#">Техномарт</a>
+            </h2>
             <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             +7 (812) 555-05-55</p>
           </div>
@@ -312,24 +316,35 @@
        </div>
     </footer>
     <div class="hidden">
-      <div class="hidden-form">
-      <form action="#" method="post">
-        <div class="form-name">
-          <label for="name">Ваше имя:</label>
-          <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
+      <div class="modal-write-us">
+          <button class="close" type="button"></button>
+              <form class="write-us-form" action="#" method="post">
+                <div class="form-answer">
+                  <label>
+                    <span>Ваше имя:</span><br>
+                      <input type="text" name="login" placeholder="Представьтесь, пожалуйста" onfocus="placeholder='';" onblur="placeholder='Представьтесь, пожалуйста';">
+                  </label>
+                  <label>
+                    <span>Ваш e-mail:</span><br>
+                      <input type="text" name="email" placeholder="Для отправки ответа" onfocus="placeholder='';" onblur="placeholder='Для отправки ответа';">
+                  </label>
+                    <span>Текст письма:</span>
+                  <textarea name="textletter" cols="61" rows="6" placeholder="В свободной форме" onfocus="placeholder='';" onblur="placeholder='В свободной форме';"></textarea>
+                </div>
+                <div class="form-btn">
+                  <button class="btn" type="submit">Отправить</button>
+               </div>
+            </form>
+          </div>
+          <div class="modal-add-product">
+            <span class="icon"></span>
+            <span>Товар добавлен в корзину!</span>
+            <button class="close" type="button"></button>
+            <div class="add-product-buttons">
+              <a class="btn active-btn" href="#">Оформить заказ</a>
+              <a class="btn" href="#">Продолжить Покупки</a>
+            </div>
         </div>
-        <div class="form-email">
-          <label for="email">Ваш e-mail:</label>
-          <input type="text" id="email" name="email" placeholder="Для отправки ответа">
-        </div>
-        <div class="letter">
-          <label for="letter">Текст письма:</label>
-          <input type="text" id="letter" name="letter" placeholder="В свободной форме">
-        </div>
-        <input type="submit" id="send" name="send" value="отправить">
-      </form>
-    </div>
-    <div class="hidden-map">
       <iframe src="https://api-maps.yandex.ru/frame/v1/-/CZsxEAYp" width="940" height="446" frameborder="0"></iframe>
     </div>
   </body>
